@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
+"""
+module containing a courtine that introduces a 
+rondom delay and returns it.
+"""
 import asyncio
 import random
+
 
 async def wait_random(max_delay: int = 10) -> float:
     """
