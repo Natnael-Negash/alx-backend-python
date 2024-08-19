@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-module containing a courtine that introduces a 
+module containing a courtine that introduces a
 rondom delay and returns it.
 """
 import asyncio
@@ -20,7 +20,7 @@ async def wait_random(max_delay: int = 10) -> float:
 
 
     Returns:
-        
+
         float: Teh actual delay time in seconds that the coroutine waited.
 
 
@@ -28,6 +28,3 @@ async def wait_random(max_delay: int = 10) -> float:
     delay = random.uniform(0, max_delay)
     await asyncio.sleep(delay)
     return delay
-
-
-
